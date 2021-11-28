@@ -11,6 +11,7 @@ RUN DEBIAN_FRONTEND="noninteractive" apt-get install --no-install-recommends -y 
         man \
         man-db \
         mc \
+        p7zip-full \
         pip \
         python3 \
         vim
