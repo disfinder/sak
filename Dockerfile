@@ -7,6 +7,7 @@ RUN DEBIAN_FRONTEND="noninteractive" apt-get install --no-install-recommends -y 
         fdupes \
         ffmpeg \
         git \
+        gnupg \
         less \
         man \
         man-db \
