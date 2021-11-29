@@ -21,3 +21,6 @@ RUN DEBIAN_FRONTEND="noninteractive" apt-get install --no-install-recommends -y 
 RUN echo y | unminimize
 
 RUN pip install --upgrade youtube-dl
+
+RUN useradd -m -G root -u 1027 user
+USER user
