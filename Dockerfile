@@ -4,6 +4,7 @@ RUN sed -i 's:^path-exclude=/usr/share/man:#path-exclude=/usr/share/man:' /etc/d
 RUN apt-get update
 RUN DEBIAN_FRONTEND="noninteractive" apt-get install --no-install-recommends -y \
         curl \
+        bash-completion \
         fdupes \
         ffmpeg \
         git \
