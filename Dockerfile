@@ -19,7 +19,6 @@ RUN DEBIAN_FRONTEND="noninteractive" apt-get install --no-install-recommends -y 
         python3 \
         vim
 
-RUN echo y | unminimize
 
 RUN pip install --upgrade youtube-dl yt-dlp
 
