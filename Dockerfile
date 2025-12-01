@@ -32,11 +32,9 @@ RUN \
     python3-dev \
     python3-full \
     vim \
-    nodejs \
-    npm
+  && echo "Done"
 
-
-RUN npm install -g deno
+RUN curl -fsSL https://deno.land/install.sh | sh
 
 USER user
 ENV PATH "$PATH:/home/user/.local/bin"
