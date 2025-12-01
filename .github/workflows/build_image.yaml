@@ -33,4 +33,4 @@ jobs:
         with:
           push: true
           tags: disfinder/sak:latest,disfinder/sak:${{ steps.date.outputs.date }}
-          platforms: linux/amd64,linux/arm/v8,linux/arm64/v8
+          platforms: linux/amd64,linux/arm64/v8
