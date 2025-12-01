@@ -31,8 +31,12 @@ RUN \
     pipx \
     python3-dev \
     python3-full \
-    vim
+    vim \
+    nodejs \
+    npm
 
+
+RUN npm install -g deno
 
 USER user
 ENV PATH "$PATH:/home/user/.local/bin"
@@ -47,4 +51,4 @@ RUN \
     youtube-dl \
     yt-dlp \
     setuptools \
-    wheel \
+    wheel
